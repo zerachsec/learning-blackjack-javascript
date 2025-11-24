@@ -1,135 +1,95 @@
 # 🃏 Blackjack Game
 
-A classic Blackjack (21) card game built with JavaScript, HTML, and CSS.
-
-## 📋 Project Status
-
-**In Progress** - Currently under active development
-
-## 🎮 Game Overview
-
-This is a browser-based implementation of the popular casino card game Blackjack. Play against the dealer and try to get as close to 21 as possible without going over!
-
-## ✨ Features
-
-### Currently Implemented
-- Basic game mechanics (STARTGAME , NEWCARD)
-- Card dealing system
-- Score calculation
-- Win/loss detection
-- Dealer AI logic
-
-### In Development
-- [ ] Betting system with chips
-- [ ] Double down functionality
-- [ ] Split pairs option
-- [ ] Insurance when dealer shows Ace
-- [ ] Game statistics tracking
-- [ ] Sound effects and animations
-- [ ] Multiple deck support
-- [ ] Save/load game state
-
-## 🚀 Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies required!
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/blackjack-game.git
-cd blackjack-game
-```
-
-2. Open `index.html` in your web browser:
-```bash
-# On macOS
-open index.html
-
-# On Linux
-xdg-open index.html
-
-# On Windows
-start index.html
-```
-
-Or simply drag and drop the `index.html` file into your browser.
-
-## 🎯 How to Play
-
-1. Click "RENDER GAME" to start a new round
-2. You'll receive two cards, dealer gets one face-up card
-3. Choose your action:
-   - **new card**: Take another card
-   - **start**: Keep your current hand
-4. Try to get closer to 21 than the dealer without going over
-5. Dealer must hit on 16 and below, stand on 17 and above
-
-### Card Values
-- Number cards (2-10): Face value
-- Face cards (J, Q, K): 10 points
-- Aces: 1 or 11 points (automatically calculated for best hand)
-
-## 📁 Project Structure
-
-```
-blackjack-game/
-├── index.html          # Main HTML file
-├── styles.css          # Game styling
-├── script.js           # Game logic
-├── README.md           # This file
-└── assets/             # Images and sounds (if applicable)
-    ├── cards/
-    └── sounds/
-```
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- Vanilla JavaScript (ES6+)
-
-## 🤝 Contributing
-
-This project is currently in development. Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 To-Do List
-
-- [ ] Add responsive design for mobile devices
-- [ ] Implement local storage for game persistence
-- [ ] Add difficulty levels
-- [ ] Create tutorial mode for beginners
-- [ ] Add multiplayer support
-- [ ] Implement achievement system
-- [ ] Add different card deck themes
-
-## 🐛 Known Issues
+A classic Blackjack (21) card game built with JavaScript, HTML, and CSS as part of my learning portfolio.
 
 
+## 👨‍💻 Developer
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+**Zerach** - Learning Web Development
 
 ## 👤 Author
 
 Your Name - [@Zer4ch](https://x.com/zer4chsec)
 
+## 📋 Project Overview
 
-## 🙏 Acknowledgments
+This is a browser-based Blackjack game that allows players to draw cards and try to reach 21 without going over. The project demonstrates fundamental web development concepts including DOM manipulation, event handling, and game logic implementation.
 
-- Inspired by classic casino Blackjack
-- Card game rules from [Bicycle Cards](https://bicyclecards.com)
-- Thanks to all contributors and testers!
+## 🎮 Features
+
+- **Start Game**: Begin a new round with two random cards
+- **Draw Cards**: Add new cards to your hand during gameplay
+- **Score Tracking**: Automatic calculation of card totals
+- **Game Status**: Real-time feedback on game state (win, lose, or continue)
+- **Player Profile**: Display player name and chip count
+- **Card Logic**: Proper Blackjack rules (Face cards = 10, Aces = 11)
+
+## 🛠️ Technologies Used
+
+- **HTML5**: Structure and layout
+- **CSS3**: Styling with custom background and button designs
+- **JavaScript (ES6)**: Game logic and interactivity
+
+## 📁 File Structure
+
+```
+blackjack-game/
+│
+├── index.html          # Main HTML structure
+├── index.css           # Styling and visual design
+├── index.js            # Game logic and functionality
+└── images/
+    └── table.png       # Background image
+```
+
+## 🎯 How to Play
+
+1. Click **START GAME** to receive your initial two cards
+2. Check your sum:
+   - If you have 21, you win with Blackjack!
+   - If you have less than 21, you can draw another card
+   - If you go over 21, you're out of the game
+3. Click **NEW CARD** to draw additional cards (only available during active gameplay)
+4. Try to get as close to 21 as possible without going over!
+
+## 🚀 Getting Started
+
+1. Clone or download this repository
+2. Ensure you have the background image at `images/table.png`
+3. Open `index.html` in your web browser
+4. Start playing!
+
+## 💡 Key Learning Concepts
+
+Through this project, I practiced:
+
+- **DOM Manipulation**: Selecting and updating HTML elements dynamically
+- **Event Handling**: Responding to button clicks
+- **Arrays**: Storing and managing card data
+- **Conditional Logic**: Implementing game rules and win/lose conditions
+- **Functions**: Organizing code into reusable blocks
+- **Objects**: Managing player data with properties
+- **Random Number Generation**: Creating unpredictable card draws
+
+## 🔮 Future Enhancements
+
+Potential improvements I'm considering:
+
+- Add betting functionality with chip management
+- Implement a dealer's hand for full Blackjack rules
+- Add animations for card dealing
+- Include sound effects
+- Create a win/loss statistics tracker
+- Add ability to customize player name
+- Implement proper Ace handling (1 or 11 based on situation)
+
+## 📝 Notes
+
+This project is part of my web development learning journey. The code focuses on clarity and fundamental concepts rather than advanced optimization.
 
 ---
 
-*Last Updated: November 2025*
+**Status**: Learning Project  
+**Last Updated**: November 2025
+**License**: Free to use for learning purposes
+
